@@ -39,6 +39,8 @@ Your output should emulate the included animated gif:
 
 If you were to use third-party tools to complete this challenge, what would you use? Write a sentence or two describing your reasoning.
 
+If I were to use third-party tools to complete this challenge, I might consider using a library like jQuery or a framework like React. jQuery would make it easier to select and manipulate the DOM elements, while React would allow me to create a reusable component with more complex behavior and state management. However, for a simple carousel like this, vanilla JavaScript is sufficient and avoids the overhead of loading and using third-party tools.
+
 ## Guidelines
 
 - All code should be written in ES6 JavaScript.
