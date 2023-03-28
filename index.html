@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Carousel</title>
+    <style>
+      .carousel img {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Carousel</h1>
+    <div class="carousel">
+      <img alt="First" src="carousel.gif" />
+      <img alt="Second" src="carousel.gif" />
+      <img alt="Third" src="carousel.gif" />
+      <img alt="Fourth" src="carousel.gif" />
+      <img alt="Fifth" src="carousel.gif" />
+    </div>
+    <script>
+      const carouselImages = document.querySelectorAll('.carousel img');
+      let index = 0;
+
+      function showImage() {
+        carouselImages.forEach(image => image.style.display = 'none');
+        carouselImages[index].style.display = 'block';
+        index = (index + 1) % carouselImages.length;
+      }
+
+      setInterval(showImage, 1000);
+    </script>
+  </body>
+</html>
